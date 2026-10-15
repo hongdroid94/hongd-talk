@@ -1,0 +1,5 @@
+.DS_Store
+.vercel/
+.omc/
+supabase/.temp/
+*.bak

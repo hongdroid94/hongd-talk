@@ -1,0 +1,17 @@
+# ⚠️  이 파일은 일부러 "거의 비어" 있다.
+#
+# 링크 대상은 운영 중인 "ai chat project"(cgrqxrlwyfyhjzfsmmik)다.
+# `supabase config push` 는 이 파일이 선언한 속성만 remote 에 쓰고 나머지는 건드리지
+# 않는다. 그래서 `supabase init` 이 깔아둔 기본값 전체(MFA, Twilio SMS,
+# storage.analytics, pooler, OTP 길이 …)를 지웠다. 그게 남아 있으면 push 한 번에
+# remote 의 실제 설정이 템플릿 기본값으로 덮인다.
+#
+# 전체 템플릿은 config.toml.full.bak 에 있다. 복원하더라도 push 는 하지 마라.
+# 설정을 추가로 바꿔야 하면 여기에 그 필드만 적고 `supabase config diff` 로
+# 변경 건수가 1인지 확인한 뒤 push 해라.
+
+project_id = "hongd-talk"
+
+[auth.email]
+# 가입 즉시 로그인 (확인 메일 없음)
+enable_confirmations = false

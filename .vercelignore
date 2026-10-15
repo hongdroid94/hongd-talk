@@ -1,0 +1,6 @@
+# Vercel 은 폴더의 모든 파일을 그대로 공개한다. 배포에 필요 없는 건 전부 제외한다.
+supabase/
+ref/
+.omc/
+README.md
+.gitignore
